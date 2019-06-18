@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 9</title>
+
+	<script type="text/javascript">
+// 9.Направете низа библиотека којa ќе содржи елементи кои се објекти. 
+//Тие објекти треба да бидат книги кои ќе имаат автор, наслов, и дали е прочитана или не (true/false)
+//-Прикажете кои книги се прочитани а потоа кои не се прочитани.
+
+
+console.log("With For Loop");
+console.log("*****************************");
+
+	var library = [
+		{
+			title: "The Big Sleep",
+			author: "Raymond Chandler",
+			read: true
+		},
+
+		{
+			title: "American Heroin",
+			author: "Melissa Scrivner Love",
+			read: false
+		},		
+
+		{
+			title: "The Reckoning",
+			author: "John Grisham",
+			read: false
+		},
+
+		{
+			title: "The Chalk Man",
+			author: "C. J. Tudor",
+			read: true
+		}
+	]
+var read = [];
+	var notRead = [];
+
+	for(var i = 0; i < library.length; i++) {
+		if(library[i].read === true) {
+			read.push(library[i]);
+			console.log("I have read " + "\"" + library[i].title + "\"" + " written by " + library[i].author + ".")
+		}
+		else {
+			notRead.push(library[i]);
+			console.log("I haven't read " + "\"" + library[i].title + "\"" + " written by " + library[i].author + ".")
+		}
+	}
+
+console.log(read);
+	console.log(notRead);
+
+	console.log("*****************************");
+	console.log("Ending of for loop!");
+	console.log("*****************************");
+
+
+//With forEach loop
+	console.log("forEach loop!");
+	console.log("*****************************");
+	var niza1 = [];
+	var niza2 = [];
+
+	library.forEach(function(book){
+		if(book.read == true) {
+
+			niza1.push(book);
+			console.log("I have read " + "\"" + book.title + "\"" + " written by " + book.author + ".")
+		}
+		else {
+			niza2.push(book);
+			console.log("I haven't read " + "\"" + book.title + "\"" + " written by " + book.author + ".")
+		}
+	})
+
+	console.log(niza1);
+	console.log(niza2);
+
+		// library.forEach(function(book){
+	// 	var endResult = "I have ";
+	// 	if(book.read == true) {
+	// 		endResult+= "read ";
+	// 	} 
+	// 	else {
+	// 		endResult += "not read ";
+	// 	}
+	// 	endResult += "\"" + book.title + "\" ";
+	// 	endResult += "written by " + book.author + ".";
+	// 	console.log(endResult);
+	// })
+
+	</script>
+</head>
+<body>
+
+	<h2>9.Направете низа библиотека којa ќе содржи елементи кои се објекти. 
+Тие објекти треба да бидат книги кои ќе имаат автор, <br> наслов, и дали е прочитана или не (true/false).
+Прикажете кои книги се прочитани а потоа кои не се прочитани.</h2>
+
+</body>
+</html>

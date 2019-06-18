@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web</title>
+
+	<script src="https://kit.fontawesome.com/c9584d5355.js"></script>
+
+<link rel="stylesheet" type="text/css" href="WebPage.css">
+	
+</style>
+</head>
+<body>
+
+		<p id="title">Various activities!</p>
+		<h1>Welcome and have fun!</h1>
+
+<div id="liDiv">
+<ul>We offer the following mathematical operations:
+		
+		<li id="firstLi">Addition <button class="arrowBtnStyle" id="addArrow"><i class="fas fa-angle-right"></i></button></li>
+
+		<li id="secLi">Subtraction <button class="arrowBtnStyle" id="subArrow"><i class="fas fa-angle-right"></i></button></li>
+
+		<li id="thirdLi">Multiplication <button class="arrowBtnStyle" id="mulArrow"><i class="fas fa-angle-right"></i></button></li>
+
+		<li id="fourthLi">Division<button class="arrowBtnStyle" id="divArrow"><i class="fas fa-angle-right"></i></button></li>
+</ul>
+</div>
+<p id="secretP"><button id="numArrow" class="arrowBtnStyle"><i class="fas fa-angle-left"></i></button>Secret Number Game </p>
+
+<p id="gamee"><button id="gameArrow" class="arrowBtnStyle"><i class="fas fa-angle-left"></i></button>Fight Game</p>
+
+
+<div id="container">
+		<div id="addition">
+			<h2>Addition</h2>
+			<input id="num1" type="number" name="num1" placeholder="Number 1">
+			<p class="sign"><i class="fas fa-plus"></i></p>
+			<br>
+			<input id="num2" type="number" name="num2" placeholder="Number 2">
+			<br><br>
+			<button id="addButton" class="btnStyle">Add</button>
+			<br><br>
+			<input id="result" type="text" name="result" placeholder="Result">
+			<br><br>
+			<button class="btnStyle" id="addResetBtn" >Reset <i class="fas fa-trash-restore"></i></button>
+		</div>
+
+		
+
+		<div id="subtraction">
+			<h2>Subtraction</h2>
+			<input id="broj1" type="number" name="broj1" placeholder="Number 1">
+			<p class="sign"><span id="secP"><i class="fas fa-minus"></i></span>  </p> 
+			<button id="replace"><i class="fas fa-exchange-alt"></i></button>
+			<br>
+			<input id="broj2" type="number" name="broj2" placeholder="Number 2">
+			<br><br>
+			<button class="btnStyle" id="subButton">Substract</button>
+			<br><br>
+			<input id="difference" type="text" name="difference" placeholder="Result">
+			<br><br>
+			<button class="btnStyle" id="subResetBtn" >Reset <i class="fas fa-trash-restore"></i></button>	
+</div>
+<div id="container2">
+		<div id="multiplication">
+			<h2>Multiplication</h2>
+			<input id="int1" type="number" name="int1" placeholder="Number 1">
+			<p class="sign"><span><i class="fas fa-star-of-life"></i></span>  </p> 
+			<button id="replace"><i class="fas fa-exchange-alt"></i></button>
+			<br>
+			<input id="int2" type="number" name="int2" placeholder="Number 2">
+			<br><br>
+			<button class="btnStyle" id="mulButton">Multiply</button>
+			<br><br>
+			<input id="mulResult" type="text" name="mulResult" placeholder="Result">
+			<br><br>
+			<button class="btnStyle" id="mulResetBtn" >Reset <i class="fas fa-trash-restore"></i></button>
+		</div>
+
+		<div id="division">
+			<h2>Division</h2>
+			<input id="br1" type="number" name="br2" placeholder="Number 1">
+			<p class="sign"><span id="secP"> <i class="fas fa-divide"></i></span>  </p> 
+			<button id="replace"><i class="fas fa-exchange-alt"></i></button>
+			<br>
+			<input id="br2" type="number" name="br2" placeholder="Number 2">
+			<br><br>
+			<button class="btnStyle" id="divButton">Divide</button>
+			<br><br>
+			<input id="divResult" type="text" name="divResult" placeholder="Result">
+			<br><br>
+			<button class="btnStyle" id="divResetBtn" >Reset <i class="fas fa-trash-restore"></i></button>
+		</div>
+</div>
+<br><br>
+
+<div id="containerNum">
+
+	<h1>Secret Number Game</h1>
+	<h2>Are you ready for the challenge?</h2>
+	<h2>Go ahead and try to guess the secret number!</h2> 
+	<h2>The secret number is between 1 and 10!</h2>
+	<!-- <h2>You have only 3 attempts!</h2> -->
+		
+	<div class="form"> 
+    <label>Enter a number: 
+    <input type = "number" id = "guessField" class = "guessInput" placeholder="Number"></label> 
+        <button id="guessButton">Guess!</button>
+        <input id="report" type="text" name="report" placeholder="Result">
+        <button id="resetAllBtn">Reset</button>
+	</div> 
+</div>
+
+
+<div id="fightGame">
+	<div id="gameContainer">
+		<h3 id="h3player">Player</h3>
+	<div class="attack" id="playerDiv">
+		<span id="hpSpan">HP:<input type="text" id="hp2input"></input></span><br>
+		<span id="energySpan">Energy:<input type="text" id="energy2input"></input></span>
+	</div>
+	<button id="attackButton" class="fightButtons">Attack!</button>
+	<button id="healButton" class="fightButtons">Heal</button>
+	<button id="ultButton" class="fightButtons">Ultimate!</button>
+
+
+	
+	
+		<h3 id="h3boss">Boss</h3>
+	<div class="attack" id="bossDiv">
+		<span id="bosshpSpan">HP:<input type="text" name="bosshpInput" id="bosshpInput"></span><br>
+		<span id="bossenergySpan">Energy:<input type="text" name="bossenergyInput" id="bossenergyInput"></span>
+	
+	</div>
+	<div id="buttonsDiv">
+	<button id="bossAttackButton" class="fightButtons">Attack!</button>
+	<button id="bossHealButton" class="fightButtons">Heal</button>
+	</div>
+</div>
+
+<button id="resetGameButton" class="btnStyle">Reset!</button>
+</div>
+
+
+
+<script type="text/javascript" src="WebPage.js">
+</script>
+</body>
+</html>

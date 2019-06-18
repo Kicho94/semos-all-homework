@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework 4</title>
+
+	<style type="text/css"> 
+
+		button {
+			display: flex;
+			
+			postion: relative;
+			right: 200px;
+		}
+		table {
+			margin: 0 auto;
+			width: 40%;
+		}
+		.ruleToRemove {
+            color:#FF0000;
+        }
+	</style>
+</head>
+<body>
+	
+	<div id="container">
+		<table id="table" border="1" >
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Salary</th>
+			<th>Age</th>
+		</tr>
+	</table>
+	
+</div>
+
+	<script type="text/javascript">
+		
+			var getPosts = () => {
+			fetch("http://dummy.restapiexample.com/api/v1/employees")
+			.then((response) => {
+					response.json().then(json =>{
+					var table = document.getElementById("table");
+					for(var i = 0;i < json.length; i++) {
+						var tr = document.createElement("tr");
+						for(var j in json[i]) {
+							if(j !== "profile_image") {
+						var td = document.createElement("td");
+						td.innerText = json[i][j];
+						tr.append(td);
+						}
+						table.append(tr);
+					}}
+				})
+			}) 
+}
+
+	  function refresh() {
+                   window .location.reload();
+           }
+
+
+            setInterval(getPosts,5000);
+            setInterval(refresh,10000);
+
+
+
+	</script>
+
+</body>
+</html>

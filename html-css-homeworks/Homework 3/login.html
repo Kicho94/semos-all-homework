@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+
+	<style type="text/css">
+
+	body {
+ 		  background: #1C1C1C;
+  		color: #42f492;
+  		font-family: sans-serif;
+	}
+
+	h2 {
+ 		  color: #42f492;
+ 		  font-size: 15px;
+  		font-weight: 600;
+  		text-align: center;
+  		margin-bottom: 10px;
+	}
+
+	h2:hover {
+		  color: black;
+	}
+
+	a {
+  		color: #42f492;
+  	  text-decoration: none;
+	}	
+
+	.login {
+  		width: 250px;
+  		position: absolute;
+  		top: 50%;
+ 	 	  left: 50%;
+ 		  margin: -184px 0px 0px -155px;
+  		background: rgba(0,0,0,0.2);
+ 		  padding: 20px 30px;
+  		border-radius: 5px;
+	}
+
+	input[type="text"], input[type="password"] {
+  		width: 250px;
+  		padding: 25px 0px;
+  		background: transparent;
+  		border: 0;
+  		border-bottom: 1px solid rgba(255,255,255,0.04);
+  		outline: none;
+  		color: #42f492;
+	}
+
+	button {
+  		background: #42f492;
+  		border: 0;
+  		width: 250px;
+  		height: 40px;
+ 		  border-radius: 3px;
+  		color: black;
+  		cursor: pointer;
+  		
+	}
+
+  button a {
+      color: black;
+  }
+
+	input[type="submit"]:hover {
+ 		  background: #16aa56;
+	}
+
+	.forgot {
+  		margin-top: 30px;
+  		display: block;
+  		font-size: 11px;
+  		text-align: center;
+  		font-weight: bold;
+	}
+
+	.forgot:hover {
+  		margin-top: 30px;
+  		display: block;
+  		font-size: 11px;
+  		text-align: center;
+  		font-weight: bold;
+  		color: #6d7781;
+	}
+
+	.remember {
+  		padding: 30px 0px;
+  		font-size: 12px;
+	}
+
+	::placeholder {
+		  color: #213d32;
+	}
+
+
+
+	</style>
+</head>
+<body>
+	<div class='login'>
+  <h2>Sign in</h2>
+  <input name="username" placeholder="Username" type="text" required=""/>
+  <input id="pw" name="password" placeholder="Password" type="password" required/>
+  <div class='remember'>
+    <input checked id="remember" name="remember" type="checkbox"/>
+    Remember me
+  </div>
+  <button><a href="Homework 3.html">Sign In!</a></button>
+  <a class='forgot' href='Homework 3.html'>Forgot your password?</a>
+</div>
+
+
+
+</body>
+</html>

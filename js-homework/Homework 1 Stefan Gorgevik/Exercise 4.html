@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 4</title>
+	<script type="text/javascript">
+	
+// 4.Напишете циклус за пресметување на сите парни 
+//броеви во еден опсег кој што ќе го внесете од prompt.
+
+	var start = prompt("Enter the starting number to check for even numbers!");
+	var start = parseInt(start);
+
+	var end = prompt("Enter the ending number to check for even numbers!");
+	var end = parseInt(end);
+	var zbir = 0;
+
+	for(var i = start; i <= end; i++) {
+		if(i % 2 == 0) {
+			console.log(i);
+			zbir += i;	
+		}
+	}
+		console.log("Zbirot e: " + zbir);
+
+
+		// if(end < start){
+		// 	var temp = end;
+		// 	end = start;
+		// 	start = temp;
+		// }
+
+
+
+	// while(start <= end) {
+	// 	if(start % 2 == 0) {
+	// 		console.log(start);
+	// 	}
+	// 	start++;
+	// }
+
+
+
+	</script>
+</head>
+<body>
+
+<h2>4.Напишете циклус за пресметување на сите парни 
+броеви во еден опсег кој што ќе го внесете од prompt.</h2>
+
+</body>
+</html>

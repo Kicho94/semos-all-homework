@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TableData</title>
+
+	<style type="text/css">
+		body {
+			width: 100%;
+			text-align: center;
+		}
+
+		table {
+			width:70%;
+			margin: auto;
+		}
+
+		table th {
+			font-size: 22px;
+			color: #42f492;
+		}
+		table, table th, td {
+			border-radius: 5px;
+			background-color: grey;
+			color: #42f492;
+		}
+
+		td {
+			color: white;
+			font-size: 18px;
+		}
+
+		input[type=button] {
+			border-radius: 5px;
+			height: 30px;
+			width: 130px;
+		}
+
+	</style>
+		
+</head>
+<body>
+
+	<form>
+		<label>First Name
+		 <input type="text" name="fname" id="fname" class="empty" /></label><br/><br/>
+
+		<label>Last Name
+        <input type="text" name="lname" id="lname" class="empty" /></label><br/><br/>
+
+        <label>Age
+        <input type="number" name="age" id="age" class="empty" /><br/><br/></label>
+    </form>
+      
+ <input type="button" name="buttonAddRow" id="buttonAdd" value="Add Row">
+        <br>
+        <br>
+
+        <table border="1"> 
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+
+        </table>
+
+    </body>
+
+</html>
+
+<script type="text/javascript" src="TableData.js"></script>
+</body>
+</html>

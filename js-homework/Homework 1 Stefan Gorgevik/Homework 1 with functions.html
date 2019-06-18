@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework</title>
+
+	<script type="text/javascript">
+		
+		// 1.Napisete program koj sto ima dve variabli (promenlivi) i ni vrakja koj broj e pogolem od niv. Vo konzolata treba da pisuva Primer: -> Brojot 5 e pogolem od brojot 3;
+
+function checkNum(num1,num2){
+
+if(num1 > num2) {
+	return"The first number is bigger!";
+}
+
+else if(num1 < num2) {
+	return "The second number is bigger!";
+}
+
+else{
+	return"They are the same!";
+}
+}
+
+console.log(checkNum(10,5));
+
+
+// 2.Napisete program koj sto vrakja text (vo konzolata) koj sto vika: Hello World vo cetiri jazici. Angliski, Francuski, Spanski, Germanski,vo zavisnost od izbraniot jazik vo variablata. Primer -> var lang = "spain" --> Rezultatot treba da bide na spanski.
+
+function checkLanguage(lang) {
+
+	lang.toLowerCase();
+	if(lang == "English") {
+		alert("Hello! How are you doing?");
+	}
+
+	else if (lang === "Spanish"){
+		alert("Como estas?");
+	}
+	else if(lang === "Macedonian") {
+		alert("Zdravo, kako si?")
+	}
+
+	else if(lang === "German") {
+		alert("Guten tag!")
+	}
+
+	else {
+		alert("We don't support that language!");
+	}
+}
+
+// 3.Napisete program koj sto vi vrakja rezultat dali moze da si kupite nov laptop. Iminjata na laptopite so nivnite ceni se: Macbook, Macbook Pro i Macbook Air. Cenata na Macbook = $500, na Macbook Pro = $900 i na Macbook Air = $600; Treba da cuvate budzet (odnosno vasi pari vo variabla. Primer -> var budzet = "$500");
+
+function askBudget(budget) {
+
+
+if(budget < 500) {
+	console.log("Your budget is: " + budget + " dollars!");
+	return "We are sorry, but your budget is too low!";
+} 
+else if(budget >= 500 && budget < 600) {
+	console.log("Your budget is: " + budget + " dollars!");
+	return "You can get the Macbook for 500 dollars!";
+}
+
+else if(budget >= 500 && budget < 900) {
+	console.log("Your budget is: " + budget + " dollars!");
+	return "Great, you can choose. You can get the Macbook for 500 dollars or you can buy the Macbook Air for 600 dollars!";
+}
+else{
+	console.log("Your budget is: " + budget + " dollars!");
+	return "Amazing!!! You can get any of the offered laptops!";
+}
+}
+
+// 4.Напишете циклус за пресметување на сите парни броеви во еден опсег кој што ќе го внесете од prompt.
+
+// var start = prompt("Enter the starting number!");
+// start = parseInt(start);
+// var end = prompt("Enter the ending number!");
+// end = parseInt(end);
+// var zbir = 0;
+
+function evenSum(start, end) {
+	var zbir = 0;
+	for(var i = start; start <= end; start ++) {
+	if(start % 2 == 0) {
+		zbir += start;
+		console.log(start);
+	}
+}
+return zbir;
+
+}
+
+
+// 5.Напишете ги сите карти од еден шпил (1-срце, 1-детелина,1-баклава, 1-лист).
+
+
+
+function cards() {
+var nums = [2,3,4,5,6,7,8,9,10, "J", "Q", "K", "A"];
+var type = ["Clubs","Hearts", "Spades", "Diamonds"];
+var cards = [];
+
+for(var i = 0; i < nums.length; i++) {
+	for(var j = 0; j < type.length; j++) {
+		console.log(nums[i] + " : " + type[j]);
+		cards.push(nums[i] + " : " + type[j]);
+	}
+}
+	return cards;
+}
+
+// 6.Креирајте објект кој во себе ќе има 7 својства со барем 2 низи
+// -Од тие две низи извлечете ги и прикажете ги првите и последните елементи
+
+
+
+
+
+function personGroup1(person) {
+	var person = {
+	name: "Stefan",
+	surname: "Gorgevik",
+	age: 25,
+	city: "Veles",
+	country: "Macedonia",
+	hobbies: ["Music", "Programming", "Workout", "Hiking"],
+	favFoods: ["Pizza", "Steak", "Fish", "Lasagna", "Shpagetti"],
+}
+	var hobbiesArr = person.hobbies[0] + " and "+ person.hobbies[3];
+	var favFoodsArr = person.favFoods[0] + " and " + person.favFoods[4]
+	return "First and last elements are: " + hobbiesArr + " plus " + favFoodsArr;	
+}
+
+
+// 7.Направете низа од имиња и прикажете ги оние чија должина е 5.
+
+
+
+function letter5names(names){
+	var names = ["Nick", "Emily", "Brigg", "Arnie", "Joe", "Michael", "Maria"];
+	var names5 =[];
+for(var i = 0; i < names.length; i++) {
+	if(names[i].length == 5) {
+		names5.push(names[i]);
+		console.log(names[i]);0
+	}
+	
+	}
+	return names5;
+}
+
+// 8.Направете низа чија големина ќе ја внесете преку prompt. Сите елементи од таа низа внесете ги преку prompt и прикажете ја подредена.
+
+
+function arrayPrompt(length) {
+var favMusic = [];
+
+for(var i = 0; i < length; i++) {
+	favMusic[i] = prompt("Enter a music genre! Element " + (i+1) + ": ");
+}
+favMusic.sort();
+return favMusic;
+}
+
+
+// 9.Направете низа библиотека кој ќе содржи елементи кои се објекти. Тие објекти треба да бидат книги кои ќе имаат автор, наслов, и дали е прочитана или не (true/false)
+// -Прикажете кои книги се прочитани а потоа кои не се прочитани.
+
+var library = [
+		{
+			title: "The Big Sleep",
+			author: "Raymond Chandler",
+			read: true
+		},
+
+		{
+			title: "American Heroin",
+			author: "Melissa Scrivner Love",
+			read: false
+		},		
+
+		{
+			title: "The Reckoning",
+			author: "John Grisham",
+			read: false
+		},
+
+		{
+			title: "The Chalk Man",
+			author: "C. J. Tudor",
+			read: true
+		}
+	]
+//with for loop
+ 	var read = [];
+	var notRead = [];
+
+	for(var i = 0; i < library.length; i++) {
+		if(library[i].read === true) {
+			read.push(library[i]);
+			console.log("I have read " + "\"" + library[i].title + "\"" + " written by " + library[i].author + ".")
+		}
+		else {
+			notRead.push(library[i]);
+			console.log("I haven't read " + "\"" + library[i].title + "\"" + " written by " + library[i].author + ".")
+		}
+	}
+
+console.log(read);
+	console.log(notRead);
+
+//with forEach
+var niza1 = [];
+	var niza2 = [];
+
+
+	library.forEach(function(book){
+		if(book.read == true) {
+
+			niza1.push(book);
+			console.log("I have read " + "\"" + book.title + "\"" + " written by " + book.author + ".")
+		}
+		else {
+			niza2.push(book);
+			console.log("I haven't read " + "\"" + book.title + "\"" + " written by " + book.author + ".")
+		}
+	})
+
+		console.log(niza1);
+	console.log(niza2);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

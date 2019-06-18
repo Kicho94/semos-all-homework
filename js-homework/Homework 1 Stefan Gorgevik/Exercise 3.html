@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 3</title>
+	<script type="text/javascript">
+
+// 3.Napisete program koj sto vi vrakja rezultat dali moze da si
+// kupite nov laptop. Iminjata na laptopite so nivnite ceni se: 
+// Macbook, Macbook Pro i Macbook Air. Cenata na Macbook = $500, na Macbook Pro = $900 
+// na Macbook Air = $600; Treba da cuvate budzet (odnosno vasi pari vo variabla. 
+// Primer -> var budzet = "$500");
+
+	
+
+	var budget = prompt("Enter your current budget and we'll let you know what kind of a laptop you can get! The offer on the table is: Macbook, Macbook Air and Macbook Pro!");
+
+	var budget = Number(budget);
+
+	var macbook = 500;
+	var macbookAir = 600;
+	var macbookPro = 900;
+
+
+	if(budget >= 900) {
+		alert("You can get any laptop you want, including the Macbook Pro that cost " + macbookPro + " dollars!")
+	}
+
+	else if(budget >= macbook && budget < macbookAir) {
+		alert("You can get the Macbook laptop for " + macbook + " dollars!");
+	}
+
+	else if(budget >= macbookAir && budget <= macbookPro) {
+		alert("You can either get the Macbook laptop for " + macbook + " dollars" + " or the Macbook Air laptop for " + macbookAir + " dollars!")
+	}
+
+	else {
+		alert("Your budget is too low. You can't get a laptop!")
+	}
+
+	
+
+	</script>
+</head>
+<body>
+
+	<h2>3.Napisete program koj sto vi vrakja rezultat dali moze da si <br>
+kupite nov laptop. Iminjata na laptopite so nivnite ceni se: <br>
+Macbook, Macbook Pro i Macbook Air. Cenata na Macbook = $500, na Macbook Pro = $900 <br>
+na Macbook Air = $600; Treba da cuvate budzet (odnosno vasi pari vo variabla. 
+Primer -> var budzet = "$500");</h2>
+
+</body>
+</html>

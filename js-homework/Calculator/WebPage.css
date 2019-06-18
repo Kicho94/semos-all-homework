@@ -1,0 +1,355 @@
+	
+	body {
+		text-align: center;
+		background-color: grey;
+		margin: 0;
+	}
+
+	#secretP {
+		color: #42f670;
+		position: relative;
+		float:right;
+		top: -210px;
+		left: -30px;
+	}
+
+	#gamee {
+		color: #42f670;
+		position: relative;
+		float:right;
+		top: -160px;
+		left: 96px;
+	}
+
+	input {
+		text-align: center;
+		border-radius: 10px;
+		border: 1px solid #42f670;
+		background-color: #232323;
+		color: #42f492;
+	}
+
+	.btnStyle  {
+		width: 100px;
+		height: 50px;
+		background-color: #232323;
+		color: #42f492;
+		border-radius: 5px;
+		font-size: 20px;
+		outline: none;
+		border: 1px solid #42f670;
+	}
+
+	.arrowBtnStyle {
+		width: 50px;
+		height: 40px;
+		background-color: #232323;
+		color: #42f492;
+		border-radius: 5px;
+		font-size: 20px;
+		outline: none;
+		border: 1px solid #42f670;
+	}
+
+	#secP {
+		display: inline-block;
+	}
+
+	#replace {
+		display: inline-block;
+		position: relative;
+		top: -40px;
+		left: 60px;
+		background-color: #232323;
+		color: #42f492;
+		border-radius: 5px;
+		font-size: 20px;
+		outline: none;
+		border: 1px solid #42f670;
+	}
+
+	#container {
+		display: inline-block;
+	}
+	#addition, #subtraction,#multiplication, #division {
+		display: inline-block;
+		margin: auto 120px;
+		border: 10px solid #232323;
+		border-radius: 30px;
+		padding: 10px;
+		margin-top: 5px;
+	}
+
+	#addition {
+		border: 10px solid #232323;
+		border-radius: 30px;
+		padding: 10px;
+		margin-top: 5px;
+	}
+
+	#subButton {
+		width: 150px;
+	}
+
+
+	#mulButton {
+		width: 150px;
+	}
+
+
+	button:hover {
+		color:grey;
+	}
+
+
+	.class2 {
+		width: 50px;
+		height: 50px;
+		border-radius: 7px;
+		outline: none;
+		border: 2px solid #232323;
+		font-size: 20px;
+	}
+
+	#title	{
+		background-color: #232323;
+		color: white;
+		width: 100%;
+		margin: 0;
+		height: 50px;
+		padding-top: 15px;
+		font-size: 30px;
+		font-weight: 800;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+
+	h1 {
+		background-color: #d0dcef;
+		margin: 0;
+	}
+
+	.sign {
+		font-size: 50px;
+		font-weight: 900;
+		margin:0  auto;
+		margin-top: 10px;
+	}
+
+
+	#subtraction, #addition, #multiplication, #division {
+		display: none;
+		background-image: url(https://images-na.ssl-images-amazon.com/images/I/51Mvxexro7L._SX384_BO1,204,203,200_.jpg);
+		background-repeat: no-repeat;
+	}
+
+	ul	{
+		text-align: left;
+		color: #42f670;
+	}
+
+	li {
+		list-style-type: none;
+		text-align: left;
+	}
+
+	#numArrow {
+		margin-right: 5px;
+	}
+
+	
+	#containerNum {
+		width: 100%;
+    	border: 5px solid #232323;
+    	text-align: center;
+    	width: 700px;
+    	display: none;
+    	color: #42f670;
+    	padding-top: 0;
+    	margin: auto 0;
+    }
+    #containerNum h1 {
+    	background-color: #232323;
+    	padding: 0;
+    	width: 100%;
+    	margin: 0;
+    }
+
+    .form {
+    	font-size: 20px;
+    	padding-bottom: 10px;
+    }
+
+	#guessField, #report{
+	height: 20px;
+	}
+
+    #guessField {
+    	width: 75px;
+    }
+
+    #report {
+    	width: 300px;
+    	height: 25px;
+    	font-size: 20px;
+    }
+
+
+    .class3 {
+    	position: relative;
+    	top: -220px;
+    	margin-left: -60px;
+
+    }
+
+    .class4 {
+    	position: relative;
+    	top: -180px;
+    	left: -150px;
+    }
+
+
+   #addArrow {
+    	margin-left: 33px;
+    }
+
+   #subArrow {
+    	margin-left: 17px;
+    } 
+
+   #divArrow {
+    	margin-left: 40px;
+    }
+
+
+    #fightGame {
+    	display: none;
+    	border: 5px solid #232323;	
+    	width: 650px;
+    	height: 410px;
+    	padding-top: 10px;
+    	background-image: url(https://www.latimes.com/resizer/T858PBEbkj1tVsiMgjasq2K2fwY=/1200x0/www.trbimg.com/img-5cfc9d53/turbine/la-1560059217-kqukz8z1xk-snap-image);
+    	background-repeat: no-repeat;
+    	position: relative;
+    	top: -220px;
+    	left: 200px;
+    }
+
+    .gameClass {
+			position:relative;
+			left: 380px;
+			color:white;
+			background-color: green;
+		}
+
+	.gameClassRed {
+			background-color: red;
+			color:white;
+		}
+
+	.gameClass2 {
+			
+			top: 600px;
+			margin-left: 450px;
+			color:white;
+			background-color: green;
+		}
+
+	.gameClassUlt {
+			background-color: #F0D30B;
+			position:relative;
+			left: 380px;
+			color:white;
+		}
+
+	#attackButton {
+			margin-left: 20px;
+		}
+
+	#ultButton {
+			position: relative;
+			bottom: -30px;
+			left: -110px;
+			width: 110px;
+			height: 30px;
+			font-size: 20px;
+		}
+
+		#resetGameButton {
+	 		position: relative;
+	 		bottom: 220px;
+	 		left: -40px;
+		}
+
+		#hp2input, #energy2input, #bosshpInput, #bossenergyInput {
+			width: 35px;
+			background-color: inherit;
+		}
+
+		.fightButtons {
+		background-color: #232323;
+		color: #42f492;
+		border-radius: 5px;
+		font-size: 16px;
+		outline: none;
+		border: 1px solid #42f670;
+		float:left;
+		}
+
+
+		#buttonsDiv {
+			position: relative;
+			left: 505px;
+			top: -295px;
+		}
+		#gameContainer {
+			margin-right: 0;
+			width: 100%;
+		}
+
+		h3 {
+			border: 3px groove #232323;
+			width: 55px;
+			padding-bottom: 10px;
+			padding-top:10px; 
+			text-align: center;
+		}
+
+		.attack {
+			border: 5px solid #232323;
+			width: 100px;
+			height:200px;
+		}
+
+		#playerDiv {
+			height: 174px;
+			margin-left: 20px;
+		}
+
+		#bossDiv {
+			margin-left: 0;
+			position: relative;
+			left: 504px;
+			top: -295px;			
+		}
+
+		.bossClass {
+			margin-left: 0;
+			position: relative;
+			left: 504px;
+			top: -295px;
+		}
+
+		
+		#h3player{
+			margin-bottom: 12px;
+			margin-left: 42px;
+			padding: auto 5px;
+		}
+
+		#h3boss {
+			position: relative;
+			top: -282px;
+			left: 504px;
+			margin-left: 23px;
+		}

@@ -1,0 +1,432 @@
+body {
+	width: 100%;
+	background-color: #1C1C1C;
+	font-family: 'Raleway', sans-serif;
+}
+
+#logo1 {
+	width: 250px;
+	height: 90px;
+	border-right: 2px solid grey;
+}
+.navref {
+	margin-bottom: 10px;
+	color: #42f492;
+	text-decoration: none;
+	position: relative;
+	bottom: 35px;
+	margin-left: 50px;
+	padding-left: 10px;
+	font-size: 25px;
+}
+
+.navref:hover {
+	color: black;
+}
+
+
+#navbar1 {
+	background-color: #1C1C1C;
+	width: 100%;
+	margin: auto;
+	border-bottom: 2px solid grey;
+}
+
+
+.span1 {
+	color: #42f492;
+	position: relative;
+	bottom: 25px;
+	padding-left: 300px;
+}
+
+#search {
+	background-color: #1C1C1C;
+	color: #42f492;
+	width: 100%;
+	height: 50px;
+	margin: auto;
+	padding-top: 20px;
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: 2px solid grey;
+	display: inline-block;
+	position: relative;
+}
+
+#searchBox {
+	width: 500px;
+	display: inline-block;
+	height: 20px;
+}
+
+.fas fa-search {
+	float: left;	
+}
+
+.regLog {
+	display: inline-block;
+	border-radius: 5px;
+	background-color: transparent;
+	width: 90px;
+	height: 35px;
+	font-size: 20px;
+}
+
+.regLog a {
+	text-decoration: none;
+	color: #42f492;
+}
+
+
+#buttons {
+	display: inline-block;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+#main h1 {
+	text-align: center;
+	background-color: #1C1C1C;
+	width: 100%;
+	padding: 0;
+	color: #42f492;
+}
+
+#main h1:hover {
+	color: black;
+}
+
+#button1 {
+	width: 40px;
+	height: 26px;
+}
+
+.concert1 {
+	background-image: url(https://stmed.net/sites/default/files/pearl-jam-wallpapers-30513-5852076.jpg);
+	background-repeat: no-repeat;
+	width: 33%;
+	height: 350px;
+	background-size: cover;
+	float: left;
+	border-radius: 20px;
+}
+
+.concert2 {
+	background-image: url(https://303magazine.com/wp-content/uploads/2017/07/18404138_10155276692866252_1271225665003021487_o.jpg);
+	background-repeat: no-repeat;
+	width: 30%;
+	height: 350px;
+	background-size: cover;
+	float: left;
+	border-radius: 20px;
+}
+
+.concert3 {
+	background-image: url(http://i.imgur.com/bHwAaeT.jpg);
+	background-repeat: no-repeat;
+	width: 33%;
+	height: 350px;
+	background-size: cover;
+	float: left;
+	background-position: center;
+	border-radius: 20px;
+}
+
+.concert1, .concert2, .concert3 {
+	margin: 10px;
+	color: white;
+	font-size: 16px;
+	padding-top: 20px;
+}
+
+a:hover {
+	color: grey;
+}
+
+.getTickets {
+	padding-left: 15px;
+	color: #42f492;
+}
+
+.appartments {
+	border: 3px solid grey;
+	border-radius: 10px;
+	color: white;
+	font-size: 20px;
+	width: 40%;
+	margin-left: 10px;
+ 	margin-top: 30px;
+	background-image: url(https://static01.nyt.com/images/2012/01/15/realestate/15COVER_SPAN/15COVER_SPAN-jumbo-v2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+#appartmentsh1 {
+	color: #42f492;
+	position: relative;
+	left: 110px;
+	top: 10px;
+	margin: -5px 0;
+}
+
+#appartmentsh1:hover {
+	color: black;
+}
+
+#searchButton1 {
+	width: 35px;
+	height: 35px;
+}
+
+.select1 {
+	margin-right: 76px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+}
+
+.cityC1 {
+	width: 250px;
+	height: 50px;
+	border-radius: 5px;
+	margin-left: 30px;
+	font-size: 25px;
+}
+
+.cityC2 {
+	width: 250px;
+	height: 50px;
+	border-radius: 5px;
+	margin-left: 30px;
+	font-size: 25px;
+}
+
+#searchBox2 {
+	width: 350px;
+	margin-left: 110px;
+	margin-top: 5px;
+	height: 30px;
+}
+
+select {
+	border-radius: 5px;
+}
+
+.option1 {
+	margin-left: 40px;
+	margin-top: 25px;
+	width: 50px;
+	background-color: transparent;
+	color: black;
+	border: 2px solid black;
+}
+
+.option2 {
+	margin-left: 20px;
+	width: 50px;
+	background-color: transparent;
+	color: black;
+	border: 2px solid black;
+}
+
+.allOptions {
+	color: black;
+}
+
+#label1 {
+	margin-left: 32px;	
+	padding-right: 148px;
+}
+
+.premium {
+	margin-top: 20px;
+	width: 50%;
+
+}
+
+#buttonSearch {
+	color: #42f492;
+	background-color: transparent;
+	border-radius: 5px;
+	width: 100px;
+	height: 40px;
+	padding: 0 20px;
+	margin-left: 250px;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+
+#buttonSearch a {
+	color: #42f492;
+	text-decoration: none;
+}
+
+#signUp {
+	background-image: url(http://www.pptbackgrounds.org/uploads/live-in-concert-backgrounds-wallpapers.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #42f492;
+	width: 55%;	
+	margin-left: 40px;
+	display: inline-block;
+	height: 222px;
+	position: relative;
+	top: -23px;
+	border: 3px solid grey;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+#signUp h3 {
+	text-align: center;
+	color: black;
+}
+
+.firstSection {
+	margin-left: 5px;
+	width: 400px;
+}
+
+#bandName {
+	width: 400px;
+	margin-left: 5px;
+	padding-left: 5px;
+}
+
+#dateOfConcert {
+	margin-left: 5px;
+}
+
+#genderSelect {
+	margin-left: 133px;
+}
+
+#buttonSubmit2 {
+	color: #42f492;
+	background-color: transparent;
+	border-radius: 5px;
+	width: 100px;
+	height: 40px;
+	padding: 0 20px;
+	margin-left: 370px;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+#buttonSubmit2 a{
+	color: #42f492;
+	text-decoration: none;
+}
+
+
+.firstSection {
+	margin-bottom: 5px;
+	margin-left: 5px;
+	padding-left: 5px;
+}
+
+#register {
+	color: #42f492;
+	display: inline-block;
+	width: 100%;
+	margin: auto;
+	align-self: center;
+	text-align: center;
+}
+
+#registerButton {
+	display: inline-block;
+	border-radius: 5px;
+	background-color: transparent;
+	width: 100px;
+	height: 50px;
+	font-size: 20px;
+
+}
+#registerButton a{
+	text-decoration: none;
+	color: #42f492;
+}
+
+#outro {
+	color: #42f492;
+	width: 100%;
+	margin: auto;
+	float: left;
+	display: inline-block;
+	border-bottom: 2px solid grey;
+	height: 99px;
+	margin-bottom: 20px;
+}
+
+ul {
+	list-style-type: none;
+	
+}
+.liTitle {
+	font-size: 25px;
+	
+}
+
+#logo3 {
+	width: 250px;
+	height: 106px;
+	display: inline-block;
+	margin-top: -10px;
+	margin-left: 150px;
+	border-bottom: 2px solid grey;
+	border-left: 2px solid grey;
+	border-right: 2px solid grey;
+	border-style: inset;
+	border-radius: 5px;
+}
+
+#liOutro {
+	
+}
+
+.ulDiv {
+	float: left;
+	display: inline-block;
+	position: relative;
+	left: 550px;
+	bottom: 100px;
+	margin-left: 50px;
+	margin-top: -17px;
+}
+
+.ulDiv a {
+	float: left;
+	color: #42f492;
+	display: inline-block;
+}
+
+.liTitle:hover{ 
+	color: black;
+ }
+
+#loginButton1 {
+	display: inline-block;
+	border-radius: 5px;
+	background-color: transparent;
+	width: 75px;
+	height: 35px;
+	font-size: 20px;
+
+}
+#loginButton1 a {
+	text-decoration: none;
+	color: #42f492;
+}
+
+.span4 {
+	font-size: 12px;
+	float: right;
+	margin-bottom: 10px;
+	margin-right: 15px;
+	color: #42f492;
+}
+

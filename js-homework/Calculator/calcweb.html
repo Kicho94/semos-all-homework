@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+
+	<script src="https://kit.fontawesome.com/c9584d5355.js"></script>
+
+	<style type="text/css">
+		
+
+	body {
+		text-align: center;
+		background-color: grey;
+		margin: 0;
+	}
+
+	#secretP {
+		color: #42f670;
+	}
+
+	input {
+		text-align: center;
+		border-radius: 10px;
+		border: 1px solid #42f670;
+		background-color: #232323;
+		color: #42f492;
+	}
+
+	.btnStyle  {
+		width: 100px;
+		height: 50px;
+		background-color: #232323;
+		color: #42f492;
+		border-radius: 5px;
+		font-size: 20px;
+		outline: none;
+		border: 1px solid #42f670;
+	}
+
+	.arrowBtnStyle {
+		width: 50px;
+		height: 40px;
+		background-color: #232323;
+		color: #42f492;
+		border-radius: 5px;
+		font-size: 20px;
+		outline: none;
+		border: 1px solid #42f670;
+	}
+
+	#secP {
+		display: inline-block;
+	}
+
+	#replace {
+		display: inline-block;
+		position: relative;
+		top: -40px;
+		left: 60px;
+		background-color: #232323;
+		color: #42f492;
+		border-radius: 5px;
+		font-size: 20px;
+		outline: none;
+		border: 1px solid #42f670;
+	}
+
+	#container {
+		display: inline-block;
+	}
+	#addition, #subtraction,#multiplication, #division {
+		display: inline-block;
+		margin: auto 120px;
+		border: 10px solid #232323;
+		border-radius: 30px;
+		padding: 10px;
+		margin-top: 5px;
+	}
+
+	#addition {
+		border: 10px solid #232323;
+		border-radius: 30px;
+		padding: 10px;
+		margin-top: 5px;
+	}
+
+	#subButton {
+		width: 150px;
+	}
+
+
+	#mulButton {
+		width: 150px;
+	}
+
+
+	button:hover {
+		font-size: 25px;
+		font-weight: 900;
+	}
+
+
+	.class2 {
+		width: 50px;
+		height: 50px;
+		border-radius: 7px;
+		outline: none;
+		border: 2px solid #232323;
+		font-size: 20px;
+	}
+
+	#title	{
+		background-color: #232323;
+		color: white;
+		width: 100%;
+		margin: 0;
+		height: 50px;
+		padding-top: 15px;
+		font-size: 30px;
+		font-weight: 800;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+
+	h1 {
+		background-color: #d0dcef;
+		margin: 0;
+	}
+
+	.sign {
+		font-size: 50px;
+		font-weight: 900;
+		margin:0  auto;
+		margin-top: 10px;
+	}
+
+
+	#subtraction, #addition, #multiplication, #division {
+		display: none;
+		background-image: url(https://images-na.ssl-images-amazon.com/images/I/51Mvxexro7L._SX384_BO1,204,203,200_.jpg);
+		background-repeat: no-repeat;
+	}
+
+	ul	{
+		text-align: left;
+		color: #42f670;
+	}
+
+	li {
+		list-style-type: none;
+		text-align: left;
+	}
+
+	#numArrow {
+		margin-right: 5px;
+	}
+
+	#secretP {
+		position: relative;
+		float:right;
+		top: -210px;
+		left: -30px;
+	}
+
+	#containerNum {
+		width: 100%;
+    	border: 5px solid #232323;
+    	text-align: center;
+    	width: 700px;
+    	display: none;
+    	color: #42f670;
+    	padding-top: 0;
+    	margin: auto 0;
+    }
+    #containerNum h1 {
+    	background-color: #232323;
+    	padding: 0;
+    	width: 100%;
+    	margin: 0;
+    }
+
+    .form {
+    	font-size: 20px;
+    	padding-bottom: 10px;
+    }
+
+	#guessField, #report{
+	height: 20px;
+	}
+
+    #guessField {
+    	width: 75px;
+    }
+
+    #report {
+    	width: 300px;
+    	height: 25px;
+    	font-size: 20px;
+    }
+
+
+    .class3 {
+    	position: relative;
+    	top: -220px;
+    	margin-left: -60px;
+
+    }
+
+    .class4 {
+    	position: relative;
+    	top: -180px;
+    	left: -150px;
+    }
+
+
+   #addArrow {
+    	margin-left: 33px;
+    }
+
+   #subArrow {
+    	margin-left: 17px;
+    } 
+
+   #divArrow {
+    	margin-left: 40px;
+    }
+
+    #ulGallery {
+    	display:flex;
+
+    }
+
+    #ulGallery li {
+    	display: inline-flex;
+    	border: 1px solid #232323;
+    	flex-grow:1;
+    	width: 52px;
+    	text-align: center;
+    }
+	</style>
+</head>
+<body>
+
+
+		<p id="title">Calculator!</p>
+		<h1>Enter two numbers and get their sum or difference!</h1>
+
+<div id="liDiv">
+<ul>We offer the following mathematical operations:
+		
+		<li id="firstLi">Addition <button class="arrowBtnStyle" id="addArrow"><i class="fas fa-angle-right"></i></button></li>
+
+		<li id="secLi">Subtraction <button class="arrowBtnStyle" id="subArrow"><i class="fas fa-angle-right"></i></button></li>
+
+		<li id="thirdLi">Multiplication <button class="arrowBtnStyle" id="mulArrow"><i class="fas fa-angle-right"></i></button></li>
+
+		<li id="fourthLi">Division<button class="arrowBtnStyle" id="divArrow"><i class="fas fa-angle-right"></i></button></li>
+</ul>
+</div>
+<p id="secretP"><button id="numArrow" class="arrowBtnStyle"><i class="fas fa-angle-left"></i></button>Secret Number Game </p>
+
+
+<div id="container">
+		<div id="addition">
+			<h2>Addition</h2>
+			<input id="num1" type="number" name="num1" placeholder="Number 1">
+			<p class="sign"><i class="fas fa-plus"></i></p>
+			<br>
+			<input id="num2" type="number" name="num2" placeholder="Number 2">
+			<br><br>
+			<button id="addButton" class="btnStyle">Add</button>
+			<br><br>
+			<input id="result" type="text" name="result" placeholder="Result">
+			<br><br>
+			<button class="btnStyle" id="addResetBtn" >Reset <i class="fas fa-trash-restore"></i></button>
+		</div>
+
+		
+
+		<div id="subtraction">
+			<h2>Subtraction</h2>
+			<input id="broj1" type="number" name="broj1" placeholder="Number 1">
+			<p class="sign"><span id="secP"><i class="fas fa-minus"></i></span>  </p> 
+			<button id="replace"><i class="fas fa-exchange-alt"></i></button>
+			<br>
+			<input id="broj2" type="number" name="broj2" placeholder="Number 2">
+			<br><br>
+			<button class="btnStyle" id="subButton">Substract</button>
+			<br><br>
+			<input id="difference" type="text" name="difference" placeholder="Result">
+			<br><br>
+			<button class="btnStyle" id="subResetBtn" >Reset <i class="fas fa-trash-restore"></i></button>	
+</div>
+<div id="container2">
+		<div id="multiplication">
+			<h2>Multiplication</h2>
+			<input id="int1" type="number" name="int1" placeholder="Number 1">
+			<p class="sign"><span><i class="fas fa-star-of-life"></i></span>  </p> 
+			<button id="replace"><i class="fas fa-exchange-alt"></i></button>
+			<br>
+			<input id="int2" type="number" name="int2" placeholder="Number 2">
+			<br><br>
+			<button class="btnStyle" id="mulButton">Multiply</button>
+			<br><br>
+			<input id="mulResult" type="text" name="mulResult" placeholder="Result">
+			<br><br>
+			<button class="btnStyle" id="mulResetBtn" >Reset <i class="fas fa-trash-restore"></i></button>
+		</div>
+
+		<div id="division">
+			<h2>Division</h2>
+			<input id="br1" type="number" name="br2" placeholder="Number 1">
+			<p class="sign"><span id="secP"> <i class="fas fa-divide"></i></span>  </p> 
+			<button id="replace"><i class="fas fa-exchange-alt"></i></button>
+			<br>
+			<input id="br2" type="number" name="br2" placeholder="Number 2">
+			<br><br>
+			<button class="btnStyle" id="divButton">Divide</button>
+			<br><br>
+			<input id="divResult" type="text" name="divResult" placeholder="Result">
+			<br><br>
+			<button class="btnStyle" id="divResetBtn" >Reset <i class="fas fa-trash-restore"></i></button>
+		</div>
+</div>
+<br><br>
+
+<div id="containerNum">
+
+	<h1>Secret Number Game</h1>
+	<h3>Are you ready for the challenge?</h3>
+	<h2>Go ahead and try to guess the secret number!</h2> 
+	<h2>The secret number is between 1 and 10!</h2>
+	<!-- <h2>You have only 3 attempts!</h2> -->
+		
+	<div class="form"> 
+    <label>Enter a number: 
+    <input type = "number" id = "guessField" class = "guessInput" placeholder="Number"></label> 
+        <button id="guessButton">Guess!</button>
+        <input id="report" type="text" name="report" placeholder="Result">
+        <button id="resetAllBtn">Reset</button>
+	</div> 
+</div>
+
+
+		<script type="text/javascript">
+			var body = document.querySelector("body");
+	var result = document.getElementById("result");
+	var result2 = document.getElementById("difference");
+	var product = document.getElementById("mulResult");
+	var quotient = document.getElementById("divResult");
+
+	var addition = document.querySelector("#addition");
+	var subtraction = document.querySelector("#subtraction")
+	var multiplication = document.querySelector("#multiplication")
+	var division = document.querySelector("#division")
+
+	var containerNum = document.querySelector("#containerNum");
+
+	var arrow = document.getElementsByClassName("selBtn");
+	var firstLi = document.querySelector("#first");
+
+	window.onload = function(){
+	var addButton = document.querySelector("#addButton");
+	addButton.addEventListener("click", function() {
+		var num1 = parseInt(document.getElementById("num1").value);
+		var num2 = parseInt(document.getElementById("num2").value);
+		var sum = Number(num1 + num2);
+		result.value = Number(sum);
+		result.classList.add("class2");
+	});
+}
+
+	var subButton = document.getElementById("subButton");
+	subButton.addEventListener("click", function() {
+		var broj1 = parseInt(document.getElementById("broj1").value);
+		var broj2 = parseInt(document.getElementById("broj2").value);
+		var difference = Number(broj1 - broj2);
+		result2.value = Number(difference);
+		result2.classList.add("class2");
+	});
+
+	var mulButton = document.getElementById("mulButton");
+	mulButton.addEventListener("click", function() {
+		var int1 = parseInt(document.getElementById("int1").value);
+		var int2 = parseInt(document.getElementById("int2").value);
+		var differenceRes = Number(int1 * int2);
+		product.value = Number(differenceRes);
+		product.classList.add("class2");
+	});
+
+	var divButton = document.getElementById("divButton");
+	divButton.addEventListener("click", function() {
+		var br1 = parseInt(document.getElementById("br1").value);
+		var br2 = parseInt(document.getElementById("br2").value);
+		var quotientRes = Number(br1 / br2);
+		quotient.value = Number(quotientRes);
+		quotient.classList.add("class2");
+	});
+
+
+	var addResetBtn = document.querySelector("#addResetBtn");
+	addResetBtn.addEventListener("click", function() {
+		var resetArea = document.querySelectorAll("input");
+		for(var i = 0; i < resetArea.length; i++) {
+    		resetArea[i].value = "";
+    	}   
+    	result.classList.remove("class2"); 	
+    	result2.classList.remove("class2");
+	})
+
+	var subResetBtn = document.querySelector("#subResetBtn");
+	subResetBtn.addEventListener("click", function() {
+		var resetArea = document.querySelectorAll("input");
+		for(var i = 0; i < resetArea.length; i++) {
+    		resetArea[i].value = "";
+    	}   
+    	result.classList.remove("class2"); 	
+    	result2.classList.remove("class2");
+	})
+
+	var mulResetBtn = document.querySelector("#mulResetBtn");
+	mulResetBtn.addEventListener("click", function() {
+		var resetArea = document.querySelectorAll("input");
+		for(var i = 0; i < resetArea.length; i++) {
+    		resetArea[i].value = "";
+    	}   
+    	mulResult.classList.remove("class2"); 	
+    	result2.classList.remove("class2");
+	})
+
+	var divResetBtn = document.querySelector("#divResetBtn");
+	divResetBtn.addEventListener("click", function() {
+		var resetArea = document.querySelectorAll("input");
+		for(var i = 0; i < resetArea.length; i++) {
+    		resetArea[i].value = "";
+    	}   
+    	divResult.classList.remove("class2"); 	
+    	result2.classList.remove("class2");
+	})
+
+	addResetBtn.addEventListener("mouseover", function() {
+		this.style.height = "90px";
+	});
+
+	addResetBtn.addEventListener("mouseout", function() {
+		this.style.height = "50px";
+	});	
+
+	subResetBtn.addEventListener("mouseover", function() {
+		this.style.height = "90px";
+	});
+
+	subResetBtn.addEventListener("mouseout", function() {
+		this.style.height = "50px";
+	});	
+
+	mulResetBtn.addEventListener("mouseover", function() {
+		this.style.height = "90px";
+	});
+
+	mulResetBtn.addEventListener("mouseout", function() {
+		this.style.height = "50px";
+	});	
+
+	divResetBtn.addEventListener("mouseover", function() {
+		this.style.height = "90px";
+	});
+
+	divResetBtn.addEventListener("mouseout", function() {
+		this.style.height = "50px";
+	});	
+
+	var replaceBtn = document.getElementById("replace");
+	replaceBtn.addEventListener("click", function() {
+		swapContent()
+	})
+
+	function swapContent(){
+	var tmp = document.getElementById("broj1").value;
+		document.getElementById("broj1").value = document.getElementById("broj2").value;
+		document.getElementById("broj2").value = tmp;
+}
+
+var addArrow = document.querySelector("#addArrow");
+addArrow.addEventListener("click", function(){
+	if(addition.style.display === "none" || subtraction.style.display ==="block"){
+		addition.style.display = "block";	
+	}
+	else{
+		addition.style.display = "none";
+	}
+	containerNum.style.display = "none";
+	subtraction.style.display = "none";
+	multiplication.style.display = "none"
+	division.style.display ="none";
+	addition.classList.add("class4");
+});
+
+var subArrow = document.querySelector("#subArrow");
+subArrow.addEventListener("click", function(){
+	if(subtraction.style.display === "none" || addition.style.display === "block" ){
+		subtraction.style.display = "block";
+	}
+	else{
+		subtraction.style.display = "none";
+	}
+	addition.style.display = "none";
+	multiplication.style.display = "none"
+	division.style.display ="none";
+	containerNum.style.display = "none";
+	subtraction.classList.add("class4");
+});
+
+var mulArrow = document.querySelector("#mulArrow");
+mulArrow.addEventListener("click", function(){
+	if(multiplication.style.display === "none"){
+		multiplication.style.display = "block";
+	}
+	else{
+		multiplication.style.display = "none";
+	}
+		addition.style.display = "none";
+		subtraction.style.display = "none"
+		division.style.display = "none"
+		containerNum.style.display ="none";
+
+	multiplication.classList.add("class4");
+});
+
+var divArrow = document.querySelector("#divArrow");
+divArrow.addEventListener("click", function(){
+	if(division.style.display === "none"){
+		division.style.display = "block";
+	}
+	else{
+		division.style.display = "none";
+	}
+
+		addition.style.display = "none";
+		subtraction.style.display = "none"
+		multiplication.style.display = "none"
+		containerNum.style.display ="none";
+
+	division.classList.add("class4");
+});
+
+var answer = Math.floor(Math.random() * 10) + 1;
+var guessButton = document.querySelector("#guessButton");
+guessButton.addEventListener("click", function(){
+
+var guess = document.querySelector("#guessField").value;
+    guess = Number(guess);
+for(var i = 0; i < 3; i++){
+		if (guess === answer) {
+            report.value ="Great job, you got it!";
+            break;
+        }
+        else if (guess < answer) {
+            report.value ="Your guess "+ guess + " is too low!";
+        }
+        else{
+            report.value ="Your guess "+ guess + " is too high!";    
+        }  
+}
+});
+
+var	resetAllBtn = document.querySelector("#resetAllBtn");
+resetAllBtn.addEventListener("click", function() {
+	var resetAll = document.querySelectorAll("input");
+		for(var i = 0; i < resetAll.length; i++) {
+    		resetAll[i].value = "";
+    	}  
+    	var guess = document.querySelector("#guessField").value;
+			guess = Number(guess);
+    		guess.value = "";
+    		guessField.value = "";
+    		answer = Math.floor(Math.random() * 10) + 1;
+
+});
+
+var numArrow = document.querySelector("#numArrow");
+numArrow.addEventListener("click", function() {
+	var containerNum = document.querySelector("#containerNum");
+	if(containerNum.style.display === "none"){
+		containerNum.style.display = "block";
+	}
+	else{
+		containerNum.style.display = "none";
+	}
+	containerNum.classList.add("class3");
+	addition.style.display = "none";
+	subtraction.style.display = "none";
+	division.style.display = "none";
+	multiplication.style.display = "none";	
+	containerNum.style.marginLeft = "200px";
+});
+
+
+		</script>
+</body>
+</html>
