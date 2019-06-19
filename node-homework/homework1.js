@@ -6,7 +6,7 @@ var people = [
 	{ime: "Pero", prezime:"Perovski", prosek: 6.2},
 	{ime: "Janko", prezime:"Jankovski", prosek: 7.1},
 	{ime: "Stanko", prezime:"Stankovski", prosek: 8.3},
-	{ime: "Petko", prezime:"Petkovski", prosek: 9.8},
+	{ime: "Petko", prezime:"Petkovski", prosek: 9.81},
 	{ime: "Ivana", prezime:"Ivanovska", prosek: 6},
 	{ime: "Gordana", prezime:"Gordanovska", prosek: 6.1},
 	{ime: "Cveta", prezime:"Cvetkoska", prosek: 9.2}
@@ -19,19 +19,20 @@ var people = [
         scores.push(people[i].prosek);
     }
     var highestScore = scores.reduce((prev, curr) => prev > curr ? a = prev : curr);
-    var filtered = people.filter(person => person.prosek === a);
+    var filtered = people.filter(person => person.prosek >= a);
     console.log("The highest score belongs to " + filtered[0].ime + " " + filtered[0].prezime + " with a score of: " +highestScore);
-
+   
 //студентот со најнизок просек,
     var b;
     var smallestScore = scores.reduce((prev, curr) => curr < prev ? b = curr : prev);
-    var filtered = people.filter(person => person.prosek === b);
+    var filtered = people.filter(person => person.prosek <= b);  
     console.log("The lowest score belongs to " + filtered[0].ime + " " + filtered[0].prezime + " with a score of: " +smallestScore);
-
-
+    
 //и средна вредност (просек) на целата генерација (сите студенти)
     var average = scores.reduce((prev, curr) => {                               
     return prev + curr;
     });
     var result = average / scores.length;
     console.log("The average score of all students is: " + result);
+   
+   
