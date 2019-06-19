@@ -24,9 +24,9 @@ var people = [
    
 //студентот со најнизок просек,
     var b;
-    var smallestScore = scores.reduce((prev, curr) => curr < prev ? b = curr : prev);
+    var lowestScore = scores.reduce((prev, curr) => curr < prev ? b = curr : prev);
     var filtered = people.filter(person => person.prosek <= b);  
-    console.log("The lowest score belongs to " + filtered[0].ime + " " + filtered[0].prezime + " with a score of: " +smallestScore);
+    console.log("The lowest score belongs to " + filtered[0].ime + " " + filtered[0].prezime + " with a score of: " +lowestScore);
     
 //и средна вредност (просек) на целата генерација (сите студенти)
     var average = scores.reduce((prev, curr) => {                               
@@ -34,5 +34,3 @@ var people = [
     });
     var result = average / scores.length;
     console.log("The average score of all students is: " + result);
-   
-   
