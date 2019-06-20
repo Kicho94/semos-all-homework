@@ -20,10 +20,11 @@ fs.readFile("test.txt", "utf8", (err,data) => {
   wordCount(data);
   sentenceCount(data);
 });
+
 var totalCharCount = (data) => {
     console.log("There are " + data.length + " characters,signs and empty spaces in this text.");
-   
 };
+
 var onlyLetters = (str) => {
     var check = /[a-z]/gi;
     var m = str.match(check);
@@ -31,6 +32,7 @@ var onlyLetters = (str) => {
       console.log("There are " + m.length + " letters in this text.");
     }
 }
+
 var wordCount = (str) => { 
     var arrMore = []; var arrLess = [];var arrEqual = [];
     var words = str.split(" ");
@@ -46,7 +48,8 @@ var wordCount = (str) => {
        }   
 console.log(`There are ${a} words in total and among them, there are ${arrMore.length} words with more than 7 characters, 
 ${arrLess.length} with less than 7 characters, and ${arrEqual.length} words with exactly 7 characters.`)};
-    var sentenceCount = (str) => {
+   
+var sentenceCount = (str) => {
         var sentences = str.replace(/([.?!])\s*(?=[A-Z])/g, "$1|").split("|");
         console.log(`There are ${sentences.length} sentences in this text.`)
 };
