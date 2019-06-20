@@ -15,13 +15,22 @@ fs.readFile("test.txt", "utf8", (err,data) => {
     if(err) {
         console.log(err);
     }
-  charCount(data);
+  totalCharCount(data);
+  onlyLetters(data);
   wordCount(data);
   sentenceCount(data);
 });
-var charCount = (data) => {
-    console.log("There are " + data.length + " characters in this text.");
+var totalCharCount = (data) => {
+    console.log("There are " + data.length + " characters,signs and empty spaces in this text.");
+   
 };
+var onlyLetters = (str) => {
+    var check = /[a-z]/gi;
+    var m = str.match(check);
+    if (m) {
+      console.log("There are " + m.length + " letters in this text.");
+    }
+}
 var wordCount = (str) => { 
     var arrMore = []; var arrLess = [];var arrEqual = [];
     var words = str.split(" ");
