@@ -11,9 +11,7 @@ var charCount = (data) => {
     console.log("There are " + data.length + " characters in this text.");
 };
 var wordCount = (str) => { 
-    var arrMore = [];
-    var arrLess = [];
-    var arrEqual = [];
+    var arrMore = []; var arrLess = [];var arrEqual = [];
     var words = str.split(" ");
     var a = words.length;
        for(var i = 0; i < words.length;i++){
