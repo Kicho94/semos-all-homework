@@ -34,9 +34,9 @@ var onlyLetters = (str) => {
 }
 
 var wordCount = (str) => { 
-    var arrMore = []; var arrLess = [];var arrEqual = [];
-    var words = str.split(" ");
-    var a = words.length;
+    var arrMore = []; var arrLess = [];var arrEqual = []; 
+    str = str.split('.').join("");
+    var words = str.replace(/,/g,'').split(" ");
        for(var i = 0; i < words.length;i++){
          if(words[i].length > 7) {
             arrMore.push(words[i]);
@@ -46,7 +46,7 @@ var wordCount = (str) => {
             arrEqual.push(words[i]);
         }
        }   
-console.log(`There are ${a} words in total and among them, there are ${arrMore.length} words with more than 7 characters, 
+console.log(`There are ${words.length} words in total and among them, there are ${arrMore.length} words with more than 7 characters, 
 ${arrLess.length} with less than 7 characters, and ${arrEqual.length} words with exactly 7 characters.`)};
    
 var sentenceCount = (str) => {
