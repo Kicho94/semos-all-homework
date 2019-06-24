@@ -26,17 +26,16 @@ var totalCharCount = (data) => {
 };
 
 var onlyLetters = (str) => {
-    var check = /[a-z]/gi;
-    var m = str.match(check);
-    if (m) {
+    var regex = /[a-z]/gi;
+    var m = str.match(regex);
+    if(m) {
       console.log("There are " + m.length + " letters in this text.");
     }
 }
 
 var wordCount = (str) => { 
     var arrMore = []; var arrLess = [];var arrEqual = []; 
-    str = str.split('.').join("");
-    var words = str.replace(/,/g,'').split(" ");
+    var words = str.split('.').join("").replace(/,/g,'').split(" ");;
        for(var i = 0; i < words.length;i++){
          if(words[i].length > 7) {
             arrMore.push(words[i]);
