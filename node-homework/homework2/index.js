@@ -35,7 +35,7 @@ var onlyLetters = (str) => {
 
 var wordCount = (str) => { 
     var arrMore = []; var arrLess = [];var arrEqual = []; 
-    var words = str.split('.').join("").replace(/,/g,'').split(" ");;
+    var words = str.split('.').join("").replace(/,/g,'').split(" ");
        for(var i = 0; i < words.length;i++){
          if(words[i].length > 7) {
             arrMore.push(words[i]);
