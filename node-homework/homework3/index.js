@@ -8,15 +8,15 @@ var server = http.createServer(function (req, res) {
         output = 0;
            if(URL.length > 2) {
                 for(let i = 2; i < URL.length;i++) {
-                    output += parseInt(URL[i]);
+                    output += Number(URL[i]);
                 }
             }
             break;
         case "sub":
-            output = parseInt(URL[2]);
+            output = Number(URL[2]);
             if(URL.length >= 2) {     
                 for(let i = 3; i < URL.length;i++) {
-                    output -= parseInt(URL[i]);  
+                    output -= Number(URL[i]);  
                 }
             }
             break;
@@ -24,15 +24,15 @@ var server = http.createServer(function (req, res) {
             output = 1;
             if(URL.length >= 2) {
                 for(let i = 2; i < URL.length;i++) {
-                    output *= parseInt(URL[i]);
+                    output *= Number(URL[i]);
             }
         }
             break;
         case "div":
-            output = parseInt(URL[2]);
+            output = Number(URL[2]);
             if(URL.length >= 2) {
                 for(let i = 3; i < URL.length; i++) {
-                    output /= parseInt(URL[i]);   
+                    output /= Number(URL[i]);   
                 }
             }
             break;
