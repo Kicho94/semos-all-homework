@@ -48,5 +48,3 @@ server.listen(8080, (err) => {
     }
     console.log("Server started successfully!");
 });
-
-
